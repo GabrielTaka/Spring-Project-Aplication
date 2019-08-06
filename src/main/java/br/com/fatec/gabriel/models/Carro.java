@@ -1,6 +1,8 @@
 package br.com.fatec.gabriel.models;
 
-public class Carro {
+import br.com.fatec.gabriel.interfaces.Veiculo;
+
+public class Carro implements Veiculo {
 	
 	private String nome;
 	private String cor;
@@ -37,6 +39,10 @@ public class Carro {
 	
 	public void setAno(int ano) {
 		this.ano = ano;
+	}
+
+	public String getVeiculo() {
+		return "O nome do veiculo é ...";
 	}
 
 }

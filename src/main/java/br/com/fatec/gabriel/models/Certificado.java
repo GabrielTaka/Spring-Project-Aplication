@@ -1,6 +1,9 @@
 package br.com.fatec.gabriel.models;
 
-public class Certificado {
+import br.com.fatec.gabriel.interfaces.Documento;
+
+public class Certificado implements Documento{
+	
 	private String instituicao;
 	private int anoDeConclusao;
 	private int anoDeInicio;
@@ -36,6 +39,11 @@ public class Certificado {
 	
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public String getDocumento() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	

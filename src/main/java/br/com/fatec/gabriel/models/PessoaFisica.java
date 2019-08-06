@@ -1,6 +1,8 @@
 package br.com.fatec.gabriel.models;
 
-public class PessoaFisica {
+import br.com.fatec.gabriel.interfaces.Pessoa;
+
+public class PessoaFisica implements Pessoa{
 	
 	private String nome;
 	private String ultimoNome;
@@ -37,5 +39,10 @@ public class PessoaFisica {
 	
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
+	}
+
+	public String getPessoa() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
