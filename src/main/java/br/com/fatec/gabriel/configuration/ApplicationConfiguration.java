@@ -1,16 +1,19 @@
 package br.com.fatec.gabriel.configuration;
 
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 import br.com.fatec.gabriel.models.Carro;
 import br.com.fatec.gabriel.models.Certificado;
+import br.com.fatec.gabriel.models.HellowPeople;
 import br.com.fatec.gabriel.models.PessoaFisica;
 
 @Configuration
+@ComponentScan(value={"br.gov.sp.fatec"})
 public class ApplicationConfiguration {
 	
-	@Bean
+	@Bean(name= {"Carro"})
 	public Carro carro1() {
 		Carro novoCarro = new Carro();
 		
@@ -22,7 +25,7 @@ public class ApplicationConfiguration {
 		return novoCarro;
 	}
 	
-	@Bean 
+	@Bean(name= {"Certificado"}) 
 	public Certificado certificato1() {
 		Certificado novoCertificado = new Certificado();
 		
@@ -34,16 +37,13 @@ public class ApplicationConfiguration {
 		return novoCertificado;
 	}
 	
-	@Bean 
-	public PessoaFisica pessoaFisica1() {
-		
-		PessoaFisica novaPessoaFisica = new PessoaFisica();
-		
-		novaPessoaFisica.setCpf("41588978093");
-		novaPessoaFisica.setIdade(20);
+	
+	@Bean(name={"pessoaMenssagem"})
+	public HellowPeople getPessoaFisica() {
+		HellowPeople novaPessoaFisica = new HellowPeople();
 		novaPessoaFisica.setNome("Gabriel");
-		novaPessoaFisica.setUltimoNome("Vargas");
-		
 		return novaPessoaFisica;
 	}
 }
+
+
