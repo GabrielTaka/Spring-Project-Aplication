@@ -27,3 +27,31 @@ IoC Container do Spring. </p>
 
 <h3> @Qualifier </h3> 
 <p> Quando um @Bean é anotado com um nome, a anotação @Qualifier permite que vc referencie pelo nome o objeto desejado. </p> 
+
+<br><h3> Spring Boot </h3> 
+<p> 
+  Spring Boot é um projeto que visa facilitar o desenvolvimento, configuraçã que façam uso dos frameworks da família spring. </p>
+ 
+<p> 
+  <strong> Convenção sobre configuração: </strong> O Spring boot trabalha com configurações padrões. Apenas particularidades   precisam ser adicionadas 
+</p>
+
+<p> <strong>  Servidor Java embutido:</strong> Não é necessário instalar um servidor java em separado para inicialiar uma aplicação. </p>
+
+<p> <strong> Sem XML: </strong> O Spring Boot aboliu uso do xml para configuração (Graças a deus hehe!) </p>
+
+<p> <strong> mvn spring-boot:run </strong> - Roda o projeto a partir do maven </p><br>
+
+<h3> Spring Data JPA </h3> 
+
+<p> Spring Data JPA é uma framework da família spring que tem como objetivo auxiliar na tarefa de persistir dados JPA </p>
+
+<p> <strong> Repositórios:</strong> Permitem consultas, operações de CRUD.  </p> 
+<p> <strong> Entidades: </strong> Mapeam Tabelas no BD.  </p>
+
+<h3> @Query </h3>
+<p> Permite a construção de consultas utilizando a linguagem JPQL (Java Persistence QUery Language )</p>
+
+<h3> @Transactional </h3>
+<p> Anotação responsavel por controle de transaçes no banco, caso haja um alteração inesperada, o spring desfaz todas as alteraçoes no banco.</p> 
+ 
